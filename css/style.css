@@ -360,7 +360,7 @@ main .box2 .linha2 .minibox1, .minibox2, .minibox3 {
     height: 15rem;
     display: flex;
     background: var(--bg-principal2);
-        box-shadow: 2px 2px 2px gray;
+    box-shadow: 2px 2px 2px gray;
 }
 
 main .box2 .linha2 i{
@@ -408,7 +408,12 @@ main .box3{
     padding: 5rem 0 2rem 9rem;
 }
 
-main .box3 .minibox1, .minibox2{
+main .box3 .minibox1,
+.minibox2{
+    border: .2rem solid black;
     width: 25rem;
     height: 15rem;
+    display: flex;
+    background: var(--bg-principal2);
+    box-shadow: 2px 2px 2px gray;
 }
