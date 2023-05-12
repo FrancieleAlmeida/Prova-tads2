@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root{
+    --bg-principal:#f7f7f7;
+    --bg-principal2:#fff;
+    --bg-secundaria:#f46483;
+    --bg-color:#51e9b1;
+    --bg-color2:#c9c9c9;
+
+}
+* {
+    border:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    width: 90vw;
+    height: 100vh;
+    border: .2rem solid black;
+    margin: 0 auto;
+    background: var(--bg-principal);
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 90px 1fr 1fr;
+    grid-template-areas: 
+    "aside header header"
+    "aside main main"
+    "aside main main";
+    
+
+}
+
+header{
+    grid-area: header;
+    display: flex;
+}
+
+header .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    gap:2rem;
+    position: relative;
+}
+
+header .box1 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 7rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    background: var(--bg-principal);
+    box-shadow: 5px 2px 2px var(--bg-color2);
+}
+
+
+header .box1 i{
+    font-size: 2rem;
+    color:#808080;
+}
+
+header .box1 div:nth-child(2):before{
+    content: "1";
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color:var(--bg-principal2);
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top:2.5rem;
+    right: 10.8rem;
+    border-radius: 50px;
+    background: var(--bg-secundaria);
+}
+
+header .box2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+header .box2 input{
+    width: 30rem;
+    height: 5rem;
+    outline: none;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+header .box2 i{
+    font-size: 2rem;
+}
+
+header .h-dir div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 7rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    background: var(--bg-principal);
+    box-shadow: 5px 2px 2px var(--bg-color2);
+}
+
+header .h-dir{
+    width: 24%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-principal2);
+}
+
+aside .box1{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:2rem ;
+    position: relative;
+}
+
+aside .box1 img{
+    width: 13rem;
+    height: 11rem;
+    border-radius: 50px;
+   
+}
+
+aside .box1 h2{
+    font-size: 2rem;
+}
+
+aside .box1 p{
+    color:var(--bg-color2);
+    font-size: 1rem;
+  
+}
+
+
+aside .box1 span{
+    font-size: 1rem;
+}
+
+aside .box1 span::before{
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50px;
+    position: absolute;
+    background: var(--bg-color);
+    left: 6.7rem;
+    bottom: .3rem;
+    
+    
+}
+
+aside .box2{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0 5rem 4.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2rem;
+    font-size: 1.3rem;
+}
+
+aside .box2 a{
+    color:#000000;
+}
+
+aside .box2 i{
+    padding: 1rem;
+}
+
+
+aside .box2 a:hover{
+    color:var(--bg-secundaria);
+    font-weight: bold;
+}
+
+aside .box3{
+    height: 20rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+aside .box3 a{
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+aside .box3 a:hover {
+    color: var(--bg-secundaria);
+    font-weight: bold;
+}
+
+
+main{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+main .box1{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+   
+}
+
+main .box1 .h-esq{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap:5rem;
+    padding: 2rem 0 0 5rem;
+}
+
+
+main .box1 .h-esq .caixa h2{
+    font-size: 2rem;
+}
+
+main .box1 .h-esq .caixa2{
+    padding-top: .5rem;
+}
+main .box1 .h-esq .caixa p{
+    color:var(--bg-color2);
+    font-size: 1rem;
+}
+
+main .box1 .h-esq .caixa2 span{
+    color:var(--bg-color2);
+    font-size: 1.5rem;
+}
+
+main .box1 .h-esq .caixa2 p {
+    font-size: 1rem;
+}
+
+
+
+main .box1 .h-dir {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap:2rem;
+    padding-right: 5rem;
+}
+main .box1 .h-dir img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+}
+
+main .box1 .h-dir .h-dir2 button{
+    border: .2rem solid;
+    border-radius: 50px;
+    width: 15rem;
+    font-size: 1.3rem;
+}
+
+main .box1 .h-dir .h-dir2 button:nth-child(1){
+    background: var(--bg-secundaria);
+    color: var(--bg-principal2);
+    
+}
+
+main .box1 .h-dir .h-dir2 button:nth-child(2){
+    background: var(--bg-principal);
+    color:var(--bg-color2);
+}
+
+
+main .box2{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+main .linha1{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 26rem;
+    padding: 2rem 0 0 5rem;
+}
+
+main .box2 .linha1 h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .box2 .linha1 i{
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+main .box2 .linha2{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+main .box2 .linha2 .minibox1, .minibox2, .minibox3 {
+    border: .2rem solid black;
+    width: 25rem;
+    height: 15rem;
+    display: flex;
+    background: var(--bg-principal2);
+        box-shadow: 2px 2px 2px gray;
+}
+
+main .box2 .linha2 i{
+    font-size: 2rem;
+}
+
+main .box2 .linha2 .caixa1{
+    width: 100%;
+    height: 7rem;
+    padding: 1rem;
+
+}
+
+main .box2 .linha2 .caixa1 p{
+    font-size: 1rem;
+    color:var(--bg-color2)
+}
+
+main .box2 .linha2 .caixa2 img{
+    width: 2rem;
+    height: 2rem;
+}
+
+main .box2 .linha2 .minibox1{
+    display: flex;
+    flex-direction: column;
+}
+
+main .box2 .linha2 .caixa2{
+    height: 7rem;
+    display: flex;
+    align-items: flex-end;
+    gap:2rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color:var(--bg-color2)
+}
+
+
+main .box3{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    gap:2rem;
+    padding: 5rem 0 2rem 9rem;
+}
+
+main .box3 .minibox1, .minibox2{
+    width: 25rem;
+    height: 15rem;
+}
