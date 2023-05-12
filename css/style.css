@@ -355,7 +355,6 @@ main .box2 .linha2{
 }
 
 main .box2 .linha2 .minibox1, .minibox2, .minibox3 {
-    border: .2rem solid black;
     width: 25rem;
     height: 15rem;
     display: flex;
@@ -410,7 +409,6 @@ main .box3{
 
 main .box3 .minibox1,
 .minibox2{
-    border: .2rem solid black;
     width: 25rem;
     height: 15rem;
     display: flex;
